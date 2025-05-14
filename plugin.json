@@ -1,0 +1,29 @@
+{
+  "id": "restrictchanneltoadmin",
+  "name": "Restrict Channel to Admins",
+  "description": "Restricts channels to messages only from channel admins",
+  "version": "1.0.0",
+  "server": {
+    "executable": "plugin"
+  },
+  "settings_schema": {
+    "settings": [
+      {
+        "key": "RestrictedChannelName",
+        "display_name": "Restricted Channel Name(s)",
+        "type": "text",
+        "help_text": "Channel name (in URL) of channels to be restricted to admin-only, seperated by commas",
+        "placeholder": "town-square",
+        "default": "town-square"
+      },
+      {
+        "key": "RejectionMessage",
+        "display_name": "Rejection Message",
+        "type": "text",
+        "help_text": "Message displayed when a user tries to post in a channel they do not have permission for",
+        "placeholder": "Only administrators can post in this channel.",
+        "default": "Only administrators can post in this channel."
+      }
+    ]
+  }
+}
